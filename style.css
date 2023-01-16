@@ -1,0 +1,63 @@
+/*------   google "font" choose your preference and import  ------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap'); 
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body{
+	background-image:linear-gradient(90deg,red,purple);  /* degreesDirection,startColor,finalColor */
+	font-family:'Roboto',sens-serif;
+	margin: 0;
+	display:flex;
+	align-items:center; /* align horizontal */
+	justify-content:center; /*---align vertical----*/
+	height:100vh; /* ----  needs for align vertical-----*/
+	overflow:hidden;  /*------  no scrollbar appears------*/
+}
+
+.search{
+	position:relative;
+}
+
+/* the bar that you type */
+/* put it behind the magnifying glass */
+.input{  
+	background-color:white;
+	border:0; /* no border on search bar */
+	font-size:20px;
+	padding:19px;
+	height:50px;
+	width:50px;
+	transition:width 1.3s;
+}
+
+/*  get the type bar bigger when its class gets active  */
+.search.active .input{
+	width:300px;
+}
+
+
+/*  magnifying glass  */
+.btn{
+	position:absolute;
+	top:0;
+	left:0;
+	border:0; /* no border of the button */
+	font-size:20px;
+	height:50px;
+	width:50px;
+	transition:transform 1.3s;
+}
+
+/*  move the magnifying glass to the right when search class gets active  */
+.search.active .btn{
+	transform:translateX(300px);
+}
+
+/* when the search bar is ready to type, hide the outline  */
+.input:focus{  
+	outline:none;
+}
