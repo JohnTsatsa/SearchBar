@@ -35,6 +35,6 @@ removes outline when is focus
 
 ### Javascript
 ```element.classList.toggle("active")```
-adds and remove the class active from the class element  
+adds and remove the class active from the element  
 ```element.focus()``` 
-focus on the element class
+focus on the element
