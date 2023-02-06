@@ -1,4 +1,5 @@
 # SearchBar
+### Demo https://johntsatsa.github.io/SearchBar/
 
 ## Description
 This project expands a search bar when you click on the icon.  
